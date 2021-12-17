@@ -1,0 +1,22 @@
+server:
+  port: 10010
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: zhongliang-yuangong
+          uri: lb://zhongliang-yuangong
+          predicates:
+            - Path=/yuangong/**
+        - id: xian-huiyuan
+          uri: lb://xian-huiyuan
+          predicates:
+            - Path=/huiyuan/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9090/eureka
