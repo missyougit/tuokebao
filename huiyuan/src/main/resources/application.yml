@@ -10,11 +10,6 @@ spring:
     username: root
     password: 123456
 
-#feign:
-#  client:
-#    config:
-#      default:
-#        loggerLevel: FULL
 
 feign:
   client:
@@ -26,4 +21,4 @@ feign:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:9090/eureka
+      defaultZone: http://localhost:9090/eureka
