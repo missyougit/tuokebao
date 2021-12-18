@@ -1,10 +1,7 @@
 package xian.huiyuan.model;
 
-import lombok.Data;
-
 import java.util.List;
 
-@Data
 public class HuiyuanResponse {
 
     private List<Huiyuan> huiyuanList;
@@ -12,4 +9,35 @@ public class HuiyuanResponse {
     private Integer total;
     private Integer pageCount;
 
+    public List<Huiyuan> getHuiyuanList() {
+        return huiyuanList;
+    }
+
+    public void setHuiyuanList(List<Huiyuan> huiyuanList) {
+        this.huiyuanList = huiyuanList;
+    }
+
+    public Huiyuan getHuiyuan() {
+        return huiyuan;
+    }
+
+    public void setHuiyuan(Huiyuan huiyuan) {
+        this.huiyuan = huiyuan;
+    }
+
+    public Integer getTotal() {
+        return total;
+    }
+
+    public void setTotal(Integer total) {
+        this.total = total;
+    }
+
+    public Integer getPageCount() {
+        return pageCount;
+    }
+
+    public void setPageCount(Integer pageCount) {
+        this.pageCount = pageCount;
+    }
 }

@@ -6,7 +6,7 @@ spring:
     name: zhongliang-yuangong
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/tuokebao
+    url: jdbc:mysql://47.108.39.243:3306/tuokebao
     username: root
     password: 123456
 
