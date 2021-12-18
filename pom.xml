@@ -8,7 +8,6 @@
         <module>feign</module>
         <module>common-return-data</module>
         <module>gateway</module>
-        <module>tablestate</module>
         <module>eureka-server</module>
     </modules>
 
